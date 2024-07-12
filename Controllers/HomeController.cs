@@ -1,5 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using TPLOCAL1.Models;
 
 //Subject is find at the root of the project and the logo in the wwwroot/ressources folders of the solution
@@ -37,12 +41,19 @@ namespace TPLOCAL1.Controllers
 
         //methode to send datas from form to validation page
         [HttpPost]
-        public ActionResult ValidationFormulaire(/*model*/)
+        public ActionResult ValidationFormulaire(Form form)
         {
             //TODO : test if model's fields are set
             //if not, display an error message and stay on the form page
             //else, call ValidationForm with the datas set by the user
-            return null;
+
+           // if (ModelState.IsValid)
+           // {
+           //     _context.Add(form);
+           //     await _context.SaveChangesAsync();
+          //      return RedirectToAction(nameof(Index));
+          //  }
+            return View();
 
         }
     }

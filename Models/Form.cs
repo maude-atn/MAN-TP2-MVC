@@ -30,7 +30,12 @@ namespace TPLOCAL1.Models
         [Required]
         public string Email { get; set; }
         [DataType(DataType.Date)]
+        //[Range(1, 12)]
         [Required]
         public DateTime Date { get; set; }
+        [Required]
+        public string Formation { get; set; }
+        [Required]
+        public string Opinion { get; set; }
     }
 }

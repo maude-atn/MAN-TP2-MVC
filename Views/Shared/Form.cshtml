@@ -4,7 +4,7 @@
 <html>
     <head>
         <title>Formulaire</title>
-        <link rel="stylesheet" href="~/ressources/Index.css" />
+        <link rel="stylesheet" href="~/resources/Index.css" />
     </head>
     <body>
         <header>
@@ -74,20 +74,41 @@
             </table>
             <table class="table">
                 <caption align="top">
-                    Informations personnelles
+                    Informations formation suivie
                 </caption>
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <tr>
-                    <td>Nom</td>
-                    <td><input asp-for="Nom" class="form-control" />
-                        <span asp-validation-for="Nom" class="text-danger"></span>
+                    <td>Date</td>
+                    <td>
+                        <input asp-for="Date" class="form-control" />
+                        <span asp-validation-for="Date" class="text-danger"></span>
                     </td>
                 </tr>
                 <tr>
-                    <td>Prenom</td>
+                    <td>Formation</td>
                     <td>
-                        <input asp-for="Prenom" class="form-control" />
-                        <span asp-validation-for="Prenom" class="text-danger"></span>
+                        <input asp-for="Formation" class="form-control" />
+                        <span asp-validation-for="Formation" class="text-danger"></span>
+                    </td>
+                </tr>
+            </table>
+            <table class="table">
+                <caption align="top">
+                    Avis sur la formation
+                </caption>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <tr>
+                    <td>Formation Cobol</td>
+                    <td>
+                        <input asp-for="Opinion" class="form-control" />
+                        <span asp-validation-for="Opinion" class="text-danger"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Formation C#</td>
+                    <td>
+                        <input asp-for="Opinion" class="form-control" />
+                        <span asp-validation-for="Opinion" class="text-danger"></span>
                     </td>
                 </tr>
             </table>
